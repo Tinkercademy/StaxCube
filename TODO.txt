@@ -1,0 +1,26 @@
+Animation Macros/tools:
+1. Line bars
+2. Ripples
+3. lerp color + region lerp
+4. Basic edits saved in macro format
+
+CREATE FRAME CLASS
+CREATE EDIT/MACRO CLASS
+settle same index when dragging blips
+
+Timeline bar
+-upon editing frame, becomes keyframe marked on bar as blip
+-keyframes (& all edits in that frame) can be deleted to remove blip (becomes normal frame)
+-blips can be duplicated
+
+Save states
+-Macro/tools saved as orderedlist for each frame
+-menu to see what is applied (instant changes, lerps included?) (sort "larger" macros higher up by number of bulbs affected)
+-function runs through all keyframes, generate each frame step by step
+
+Layer edit mode
+-Choose which direction to slice
+
+Cube config mode
+-current default of saving edits to chunk 0
+-allow selecting positions of cubes

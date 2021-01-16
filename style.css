@@ -1,0 +1,108 @@
+body {
+	margin: 0px;
+	overflow:hidden;	
+}
+
+canvas{
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:-1000;
+}
+
+footer{
+	position:fixed;
+	background-color: rgba(255,255,255,0.8);
+	color:white;
+	height:10vh;
+	width:100vw;
+	bottom:0px;
+}
+
+div.colorPicker{
+	background-image: url('img/color_picker.svg');
+	background-size: cover;
+	width:5vh;
+	height:5vh;
+	display:inline-block;
+}
+
+div.colorPicker input[type='color']{
+	opacity:0;
+	padding:0;
+	width:5vh;
+	height:5vh;
+	border:none;
+	margin:0;
+}
+
+#framebar{
+	background-color:#ff9900;
+	left:2vw;
+	top:0.25vh;
+	width:80vw;
+	height:2vh;
+	position:absolute;
+	border-radius:100vh;
+}
+
+div.page{
+	display:none;
+}
+
+div.page.active{
+	display:block;
+}
+
+input[type='radio'].blip{
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+	transform:translate(-50%,0);
+	background-color:#ff9900;
+	background-image: url('img/frame.svg');
+	background-size: cover;
+	margin:0;
+	padding:0;
+	border-radius:100vh;
+	position:absolute;
+	height:2vh;
+	width:2vh;
+	border:thin solid white;
+	font-size:30%;
+	color:white;
+	text-align:center;
+}
+
+input[type='radio'].blip:checked{
+	background-image: none;
+	box-shadow: 0px 0px 0.7vmin 0.4vmin #995c00 inset;
+}
+
+button.btn{
+	background-color:#ff9900;
+	margin:0;
+	padding:0;
+	border-radius:0.75vh;
+	height:5vh;
+	width:5vh;
+	border:thin solid white;
+	font-size: 1.2vmin;
+	color:white;
+	text-align:center;
+}
+
+button.btn:active {
+	box-shadow: 0px 0px 0.7vmin 0.4vmin #995c00 inset;
+}
+
+button.btn:disabled{
+	background-color:#eeeeee;
+}
+
+img.btnIcon{
+	margin:0;
+	padding:0;
+	height:60%;
+	width:60%;
+}
